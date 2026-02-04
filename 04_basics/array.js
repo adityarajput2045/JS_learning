@@ -29,7 +29,7 @@ console.log(arr.includes(9))  // Is 9 is availble on this array ..False
 
 console.log(arr.indexOf(3)) // Find the index notes: If the index is not available the output will -1
 
-console.log(arr)
+
 console.log(typeof arr)
 
 const newArr = arr.join()
