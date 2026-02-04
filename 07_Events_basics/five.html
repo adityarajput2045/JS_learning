@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color:aliceblue">
+    <h2>Amazing Image</h2>
+    <div>
+        <ul id="images">
+            <li>
+                <img 
+                width="200px" 
+                id="photoshop" 
+                src="https://cdn.shopify.com/s/files/1/0163/6622/files/How_to_Edit_Photos_in_Photoshop.jpg?v=1679426122" 
+                alt="photoshop"
+                >
+            </li>
+            <li>
+                <img 
+                width="200px" 
+                id="japan" 
+                src="https://www.celebritycruises.com/blog/content/uploads/2021/03/what-is-japan-known-for-mt-fuji-hero-1920x890.jpg" 
+                alt=""
+                >
+            </li>
+            <li>
+                <img 
+                width="200px" 
+                id="river" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pirogue_running_on_the_Mekong_at_golden_hour_between_Don_Det_and_Don_Khon_Laos.jpg/1280px-Pirogue_running_on_the_Mekong_at_golden_hour_between_Don_Det_and_Don_Khon_Laos.jpg" 
+                alt="" 
+                >
+            </li>
+            <li>
+                <img 
+                width="200px" 
+                id="owl" 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8V1hJOgZNWmy8TVGL3MHNOMh4V86M7Fflg&s" 
+                alt=""
+                <!-- onclick="alert('owl')" -->
+                >
+            </li>
+            <li>
+                <img 
+                width="200px" 
+                id="prayer" 
+                src="https://static.vecteezy.com/system/resources/thumbnails/007/595/760/small/silhouette-of-christian-praying-hands-spiritual-and-religious-people-praying-to-god-christianity-concepts-photo.jpg" 
+                alt=""
+                >
+            </li>
+            <li>
+                <a 
+                style="color:aliceblue" 
+                href="https://google.com" 
+                id="google">
+                    Google
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    
+</body>
+<script>
+    // // document.getElementById('owl').onClick = function(){
+    // //     alert('Owl Clicked');
+    // // }
+
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     alert("Owl Clicked Again");
+    // })
+
+    // //attachevent()
+    // //jQuery - on
+    // //type, timestamp, defaultprevented
+    // //target, toElement, srcElement, currenttarget
+    // //clientX, clientY, screenX, screenY
+    // //altkey, ctrlkey, shiftkey, keycode
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log(e)
+    // },false)
+    // //default value is always false
+    // //event propagation: eventbubbling, event capturing
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("ul clicked")
+    // },false)
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("Owl clicked")
+    //     e.stopPropagation()
+    // },false)
+    
+    
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();  // events stop
+    //     console.log('Google clicked')
+    // },false)
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+        if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode
+            removeIt.remove();
+        }
+        
+    })
+</script>
+</html>
