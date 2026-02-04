@@ -1,11 +1,15 @@
+//Array
+//Declaration of Array
 const myArr = [0,1,2,3,4,5]
 const heros = ["Shaktimaan","Naagraj"]
-
 const arr = new Array(1,2,3,4)
+
+console.log(arr)
+
 console.log(arr[0]);
 console.log(arr[1]);
 console.log(arr[2]);
-console.log(arr)
+
 
 //Arrray method
 arr.push(6) //Add 6 from backside
