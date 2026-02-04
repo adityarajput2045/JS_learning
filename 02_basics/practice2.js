@@ -63,3 +63,8 @@ console.log(8 | 5) // 13
 console.log(5 - 7)  // -2
 console.log(5 ^ 7)  // 2
 
+//Ternary Operator
+const age = 18;
+const status = age >= 18 ? "Adult" : "Minor";
+console.log(status);
+
