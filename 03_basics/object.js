@@ -11,3 +11,11 @@ user.usrename = "Sam"
 console.log(user.usrename)
 user.welcomeMessage()
 
+let emp = { 
+    firstName: "Riya", 
+    lastName: "Kaur", 
+    salary: 40000
+} 
+
+console.log(delete emp.salary); 
+console.log(emp);
